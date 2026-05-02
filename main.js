@@ -15,6 +15,9 @@ var kategory = document.querySelector('.category')
 // Pilih semua tombol desain/di dalam content
 // Ini adalah element <button> dengan class .btn-desain
 var semuaTombol = document.querySelectorAll('.btn-desain');
+var header = document.querySelector('.header-container')
+var categoryP = document.querySelector('.sidebar-p')
+
 
 function resetTampilan() {
     semuaTombol.forEach(tombol => {
@@ -35,7 +38,7 @@ btnDrop.addEventListener('click', function() {
 sidebarEcommerce.addEventListener('click', function () {
     resetTampilan()
     btnE.forEach(t => {
-        t.style.display = 'inline-block'
+        t.style.display = 'inline-block';
     });
 });
 
@@ -74,3 +77,4 @@ sidebarLanding.addEventListener('click', function () {
     });
 });
 /////////////////////////////////////////////////////////
+
